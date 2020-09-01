@@ -53,18 +53,21 @@ public class Main {
 //		System.out.println("Your age is: " + age + " Ok, boomer");
 		
 		///*****Swap to variables*****//
+//		
+//		String x = "water";
+//		String y = "Kool-Aid";
+//		String temp;
+//		
+//		temp = x;
+//		x=y;
+//		y=temp;
+//		
+//	
+//		System.out.println("x: "+x);
+//		System.out.println("y: "+y);
 		
-		String x = "water";
-		String y = "Kool-Aid";
-		String temp;
 		
-		temp = x;
-		x=y;
-		y=temp;
-		
-	
-		System.out.println("x: "+x);
-		System.out.println("y: "+y);
+		///***
 		
 	}
 
