@@ -12,7 +12,7 @@ public class javaExpressions {
 		int money = 10;
 		
 		money--;
-		
+					
 		
 		System.out.println("You now have $" + money + " U.S. dollars");
 		
