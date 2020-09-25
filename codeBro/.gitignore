@@ -1,1 +1,4 @@
 /bin/
+/src/compareObjects
+/src/encapsulation
+.gitignore
