@@ -1,11 +1,16 @@
 package methodOverloading;
 
 public class Bicycle extends Vehicle{
+
+
+	
+	int wheels;
 	
 	
-	@Override
-	public void go() {
-		System.out.println("This bicycle is in motion");
+	public Bicycle(int a, int b) {
+	
+		super(a);
+		this.wheels = b;
 	}
 
 }

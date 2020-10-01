@@ -5,12 +5,13 @@ public class Vehicle {
 	
 		int speed = 0;
 		boolean inMotion = false;
+		int year;
 		
-		public void go() {
-			System.out.println("This vehicle is in motion");
+		public Vehicle(int a) {
+			this.year = a;
 		}
 		
-		public void stop() {
-			System.out.println("This vehicle is stopped");
+		public int getYear() {
+			return this.year;
 		}
 }

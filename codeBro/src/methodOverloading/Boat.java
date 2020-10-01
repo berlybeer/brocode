@@ -2,10 +2,13 @@ package methodOverloading;
 
 public class Boat extends Vehicle{
 
+	int propellers;
 	
-	@Override
-	public void go() {
-		System.out.println("This boat is in motion");
-	}
+	public Boat(int a, int b) {
+		
+		super(a);
+		this.year = a;
 
+	}
+	
 }
