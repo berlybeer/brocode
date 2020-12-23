@@ -20,6 +20,7 @@
 	<classpathentry kind="src" path="54 Java GUI FlowLayout"/>
 	<classpathentry kind="src" path="55 Java GUI GridLayout"/>
 	<classpathentry kind="src" path="56 Java JLayaredPane"/>
+	<classpathentry kind="src" path="Java GUI Open a new window"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
 		<attributes>
 			<attribute name="module" value="true"/>

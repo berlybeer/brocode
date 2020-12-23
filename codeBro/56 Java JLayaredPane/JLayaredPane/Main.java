@@ -29,6 +29,7 @@ public class Main {
 		label3.setBounds(150,150,200,200);
 		
 		
+		
 		JLayeredPane layeredPane = new JLayeredPane();
 		layeredPane.setBounds(0, 0, 500, 500);
 		layeredPane.add(label1, Integer.valueOf(0));
