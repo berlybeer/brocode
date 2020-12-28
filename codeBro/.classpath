@@ -26,6 +26,7 @@
 	<classpathentry kind="src" path="60 Java GUI checkbox"/>
 	<classpathentry kind="src" path="61 Java GUI radio buttons"/>
 	<classpathentry kind="src" path="62 Java GUI combox"/>
+	<classpathentry kind="src" path="63 Java GUI JSlider"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
 		<attributes>
 			<attribute name="module" value="true"/>
