@@ -31,6 +31,7 @@
 	<classpathentry kind="src" path="65 Java let&apos;s create a menubar"/>
 	<classpathentry kind="src" path="66 Java how to select a file"/>
 	<classpathentry kind="src" path="67 Java GUI Color Chooser"/>
+	<classpathentry kind="src" path="68 Java GUI KeyListener"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
 		<attributes>
 			<attribute name="module" value="true"/>
