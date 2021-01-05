@@ -1,69 +1,65 @@
-import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
+import javax.swing.Timer;
 
-public class MyPanel extends JPanel {
-
-
-	Image image;
+public class MyPanel extends JPanel implements ActionListener{
+	
+	final int PANEL_WIDTH = 500;
+	final int PANEL_HEIGHT = 500;
+	Image enemy;
+	Image backgroundImage;
+	Timer timer;
+	int xVelocity = 15;
+	int yVelocity = 15;
+	int x = 0;
+	int y = 0;
 	
 	
 	MyPanel(){
-		image = new ImageIcon(new ImageIcon("sky.png").getImage().getScaledInstance(500, 500, Image.SCALE_SMOOTH)).getImage();
-		this.setPreferredSize(new Dimension(500,500));
+		this.setPreferredSize(new Dimension(PANEL_WIDTH, PANEL_HEIGHT));
+		this.setBackground(Color.black);
+		enemy = new ImageIcon(new ImageIcon("zombie.png").getImage().getScaledInstance(180, 150, Image.SCALE_SMOOTH)).getImage();
+		backgroundImage = new ImageIcon("garden.png").getImage();
+		timer = new Timer(1, this);
+		timer.start();
+		
 	}
-	
+
 	public void paint(Graphics g) {
 		
+		super.paint(g);
+		
 		Graphics2D g2D = (Graphics2D) g;
-
-		g2D.drawImage(image, 0, 0, null);
-//		g2D.setPaint(Color.blue);
-		g2D.setStroke(new BasicStroke(5));
-//		g2D.drawLine(0, 0, 500, 500);
+		g2D.drawImage(backgroundImage, 0, 0, null);
+		g2D.drawImage(enemy, x, y, null);
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
 		
 		
-		g2D.setPaint(Color.pink);
-//		g2D.drawRect(0, 0, 100, 200);
-//		g2D.fillRect(0,0,100,200);
+		if(x>=PANEL_WIDTH-enemy.getWidth(null)|| x<0) {
+			xVelocity = xVelocity * -1;
+		}
 		
+		x = x + xVelocity;
 		
-		g2D.setPaint(Color.orange);
-//		g2D.drawOval(50,50,100,100);
+		if(y>=PANEL_HEIGHT-enemy.getHeight(null)|| y<0) {
+			yVelocity = yVelocity * -1;
+		}
 		
-		g2D.fillOval(100, 100, 100, 100);
-		
-		
-		g2D.setPaint(Color.red);
-		//g2D.drawArc(50, 200, 100, 100, 180, 180);
-//		g2D.fillArc(50, 200, 100, 100, 0, 180);
-//		g2D.setPaint(Color.white);
-//		g2D.fillArc(50, 200, 100, 100, 180, 180);
-		
-		
-		int[] xPoints = {150,250,350};
-		int[] yPoints = {300,150,300};
-		
-		
-		g2D.setPaint(Color.yellow);
-//		g2D.drawPolygon(xPoints, yPoints, 3);
-//		g2D.fillPolygon(xPoints, yPoints, 3);
-		
-		g2D.setPaint(Color.magenta);
-		g2D.setFont(new Font("Ink Free", Font.BOLD, 30));
-		g2D.drawString("Sandrix Crees que llueva hoy?", 50, 350);
-		
-		
-
-		
-		
+		y = y + yVelocity;
+		repaint();
 	}
 
 }
