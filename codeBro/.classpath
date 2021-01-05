@@ -34,6 +34,7 @@
 	<classpathentry kind="src" path="68 Java GUI KeyListener"/>
 	<classpathentry kind="src" path="69 Java GUI MouseListener"/>
 	<classpathentry kind="src" path="70 Java GUI drag and drop"/>
+	<classpathentry kind="src" path="71 Java Key Bindings"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
 		<attributes>
 			<attribute name="module" value="true"/>
